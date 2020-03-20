@@ -4,9 +4,10 @@ namespace JJSeeSharp
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           Human jj = new Human("JJ", 19, Gender.male);
+            Console.WriteLine(jj.getName());
         }
     }
 }
