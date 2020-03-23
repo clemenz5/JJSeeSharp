@@ -1,6 +1,8 @@
+using JJSeeSharp;
+
 namespace JJSeeSharp
 {
-    enum Gender
+    enum gender
     {
 male, female, apachecombathelicopter
     }
