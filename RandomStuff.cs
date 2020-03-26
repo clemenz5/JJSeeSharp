@@ -10,7 +10,7 @@ public RandomStuff(){
 }
 
 public car getCar(){
-    car MySummerCar = new car(getRandomColour(), getRandomBrand(), new car.seat(getRandomBool(), car.seat.rating.ss, car.seat.material.gold, rnd.Next(0,99)),rnd.Next(1,22));
+    car MySummerCar = new car(getRandomColour(), getRandomBrand(),getRandomSeat(), rnd.Next(1,22));
     return MySummerCar; 
 }
 
@@ -35,6 +35,40 @@ car.farbe getRandomColour(){
    else
    { return car.farbe.mxkaercher;}
 }
+
+car.seat getRandomSeat(){
+    return new car.seat(getRandomBool(), getRandomRaiting(),getRandomMaterial(),rnd.Next(1,22));
+
+}
+
+car.seat.rating getRandomRaiting(){
+    int rndmnumber = rnd.Next(0, 4);
+   if(rndmnumber == 0)
+   { return car.seat.rating.high;}
+
+   if (rndmnumber == 1)
+   { return car.seat.rating.low;}
+
+    if (rndmnumber == 2)
+   { return car.seat.rating.ss;}
+
+    else
+   { return car.seat.rating.medium;}
+}
+
+car.seat.material getRandomMaterial(){
+    int rndmnumber = rnd.Next(0, 3);
+   if(rndmnumber == 0)
+   { return car.seat.material.fabric;}
+
+   if (rndmnumber == 1)
+   { return car.seat.material.gold;}
+
+    else
+   { return car.seat.material.leather;}
+}
+
+
 
 car.brand getRandomBrand(){
    int rndmnumber = rnd.Next(0, 5);

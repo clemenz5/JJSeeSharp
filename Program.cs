@@ -10,7 +10,9 @@ namespace JJSeeSharp
           
           car MyRandomCar = randomizer.getCar();
           Console.WriteLine(MyRandomCar.ToString());
-            
+
+          CarShop Werkstatt = new CarShop();
+          Werkstatt.testmethode();
             
 
             

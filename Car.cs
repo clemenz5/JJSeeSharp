@@ -76,6 +76,13 @@ public class seat{
         mBelt = belt;
     }
 
+    public override string ToString(){
+        string output = "Headrest: " + mHeadrest.ToString() + ", Rating: " + mRating +  ", Material: " + mMaterial + ", Belt: " + getBelt();
+        return output;
+    }
+
+    
+
 }
 public enum farbe{
     red, green, dingding, mxkaercher
@@ -101,6 +108,8 @@ brand getBrand(){
 void setBrand(brand mAsdf){
     mMarke= mAsdf;
 }
+
+
 
 public override string ToString(){
     string output ="";
