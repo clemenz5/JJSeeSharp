@@ -4,20 +4,14 @@ namespace JJSeeSharp
 {
     class Program
     {
+      
         public static void Main(string[] args)
         {
-          RandomStuff randomizer = new RandomStuff();
-          
-          car MyRandomCar = randomizer.getCar();
-          Console.WriteLine(MyRandomCar.ToString());
-
-          CarShop Werkstatt = new CarShop();
-          Werkstatt.testmethode();
-            
-
-            
-
-
-        } 
+            new Controller();
+           
+        
+           
+              
+         } 
     }
 }

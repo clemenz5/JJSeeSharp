@@ -3,15 +3,11 @@ using System.Collections.Generic;
 using System;
     class CarShop{
 
-    LinkedList<string> Liste = new LinkedList<string>();
-    public void testmethode(){
-        Liste.AddFirst("test");
-        Console.WriteLine(Liste.ToString());
+    LinkedList<car> Liste = new LinkedList<car>();
+    public void storeCar(car auto){
+        Liste.AddFirst(auto);
+        Console.WriteLine(Liste.Count);
     }
     
-
-    
-
-
     }
 }
